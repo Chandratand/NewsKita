@@ -1,12 +1,12 @@
 import React, {useEffect} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-import {ILLogo} from '../../assets/Illustration';
+import {StyleSheet, View} from 'react-native';
+import {ILLogo} from '../../assets';
 import {colors} from '../../utils/colors';
 
 const Splash = ({navigation}) => {
   useEffect(() => {
     setTimeout(() => {
-      navigation.replace('Home');
+      navigation.replace('MainApp');
     }, 3000);
   }, [navigation]);
   return (
